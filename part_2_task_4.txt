@@ -1,0 +1,10 @@
+Theoretical Insights: Why Cosine Similarity?In content-based recommendation systems,
+ text is converted into high-dimensional vectors (such as via TF-IDF). 
+ Cosine Similarity is used to calculate the directional closeness between these vectors rather than calculating raw Euclidean distance.Mathematically,
+  it measures the cosine of the angle between two multi-dimensional vectors in a vector space.
+  Key benefits for NLP and Recommendations:Length Independence: 
+  Euclidean distance scales poorly if one description is very short and another is highly verbose, 
+  mistakenly making them look distant. Cosine similarity evaluates the normalized vector angle, 
+  meaning it focuses entirely on the relative keyword composition and semantic profile rather than text length.
+  Bounded Scale: The output is bound neatly between $0$ (completely orthogonal, meaning zero matching terms) and $1$ (identical relative word distribution), 
+  making threshold tuning highly predictable.
